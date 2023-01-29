@@ -6,11 +6,10 @@ Please note that configuration register on this chipset is write-only, so this u
 Configuration register of FE2010A is at port 63h, and has the following structure:
 ```
  84218421
- **       -- CPU Clock (00 = 4.77 MHz, 01 = 7.15 MHz, 10 = 9.45 MHz)
-   *      -- No Memory Wait States (1 = 0 WS)
-    *     -- RAM Size H (00 = 640 kB, 01 = 256 kB, 10 = 512 kB)
-     *    -- Configuration Freeze (0 = no freeze, 1 = only bits 5-7 can be altered)
-      *   -- RAM Size L
-       *  -- FPU Enabled (0 = No FPU, 1 = FPU Present)
-        * -- Disable Parity Check (0 = Parity Check Enabled, 1 = Parity Check Disabled)
+ **...... -- CPU Clock (00 = 4.77 MHz, 01 = 7.15 MHz, 10 = 9.45 MHz)
+ ..*..... -- No Memory Wait States (1 = 0 WS)
+ ...*.*.. -- RAM Size (00 = 640 kB, 01 = 256 kB, 10 = 512 kB)
+ ....*... -- Configuration Freeze (0 = no freeze, 1 = only bits 5-7 can be altered)
+ ......*. -- FPU Enabled (0 = No FPU, 1 = FPU Present)
+ .......* -- Disable Parity Check (0 = Parity Check Enabled, 1 = Parity Check Disabled)
 ```
