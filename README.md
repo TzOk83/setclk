@@ -1,5 +1,5 @@
 # setclk
-SETCLK is a tiny executable to set a CPU clock on FE2010A/PT8010AF baset IBM-PC/XT clones.
+SETCLK is a tiny executable to set a CPU clock on FE2010A/PT8010AF based IBM-PC/XT clones.
 
 Please note that configuration register on this chipset is write-only, so this utility is unable to read it's "current" state, so some assumptions had to be made. Presence of the FPU is chcecked in the BIOS Equipment List, and it is assumed that there is no memory parity, and memory operates with 0 Wait States.
 
